@@ -85,14 +85,5 @@ function limpiar() {
     cliente.focus();
 }
 function subtotal() {
-    var a = document.querySelectorAll("input[type='number']");
-    if(a != undefined || a != null){
-  a.forEach(function (x){ //De todo el resultado iteramos con un Foreach
-    var precio = Number(x.parentElement.previousSibling.textContent); // Localizamos el Precio dentro de la tabla
-    x.onkeyup = function (){ //Asignamos un Metodo del teclado; 
-      this.offsetParent.nextElementSibling.children[0].innerHTML = (precio * x.value); //Calculamos el subtotal y se lo agregamos en la columna
-      generarTotal(); // Ejecutamos una funcion que se genera el Total
-    }
-  });//Foreach
-    }//if
+    
 }
