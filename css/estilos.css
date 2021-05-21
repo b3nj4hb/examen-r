@@ -28,6 +28,7 @@ img {
     height: 100%;
     border: 2px solid rgba(0, 0, 0, 0.397);
     box-sizing: border-box;
+    border-radius: 8px;
 }
 #banner {
     display: flex;
@@ -45,6 +46,7 @@ img {
     width: 900px;
     margin-top: 30px;
     border: 2px solid rgba(0, 0, 0, 0.397);
+    border-radius: 8px;
     box-sizing: border-box;
     padding-top:20px;
     padding-right: 20px;
