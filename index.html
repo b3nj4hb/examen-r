@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Ventas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<!---->
+
+<body>
+    <div class="header">
+        <div id="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Half-Life_lambda_logo.svg" alt=""></div>
+        <div id="banner">Sistema de Ventas</div>
+    </div>
+
+    <div class="container">
+        <div class="form">
+            <div class="lado">
+                <input type="date" placeholder="Fecha" class="caja" id="cliente">
+                <select name="combo" id="doc" class="caja">
+                    <option value="0">Cliente</option>
+                    <option value="Estudiante">Estudiante</option>
+                    <option value="Profesor">Profesor</option>
+                    <option value="Personal">Personal</option>
+                </select>
+                <select name="producto" id="prod" class="caja">
+                    <option value="0">Seleccionar Producto</option>
+                    <option value="Lacteos">Lacteos</option>
+                    <option value="Menestras">Menestras</option>
+                    <option value="Abarrotes">Abarrotes</option>
+                </select>
+                <input type="text" placeholder="Precio" class="caja" id="precio">
+                <input type="text" placeholder="Cantidad" class="caja" id="cant">
+                <button class="boton" onclick="guardar()">Agregar</button>
+            </div>
+        </div>
+        <div class="datos">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Cliente</th>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="tbd">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
